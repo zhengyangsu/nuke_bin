@@ -1,0 +1,18 @@
+import nuke
+selectedNodes = nuke.selectedNodes()
+
+
+
+item["before"].setValue("loop")
+item["after"].setValue("loop")
+
+for item in selectedNodes:
+    print item
+   
+
+
+    item["raw"].setValue(True)
+    item["smartGrade"].setValue(False)
+    item["on_error"].setValue("black")
+    item["before"].setValue("loop")
+
